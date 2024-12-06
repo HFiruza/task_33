@@ -20,8 +20,11 @@
 Пример работы программы:
 
 s1 = Shop()
+
 p1 = Product('Potato', 50.5, 'Vegetables')
+
 p2 = Product('Spaghetti', 3.4, 'Groceries')
+
 p3 = Product('Potato', 5.5, 'Vegetables')
 
 print(p2) # __str__
@@ -33,21 +36,34 @@ print(s1.get_products())
 Вывод на консоль:
 
 Первый запуск:
+
 Spaghetti, 3.4, Groceries
+
 Potato, 50.5, Vegetables
+
 Spaghetti, 3.4, Groceries
+
 Potato, 5.5, Vegetables
 
 Второй запуск:
+
 Spaghetti, 3.4, Groceries
+
 Продукт Potato уже есть в магазине
+
 Продукт Spaghetti уже есть в магазине
+
 Продукт Potato уже есть в магазине
+
 Potato, 50.5, Vegetables
+
 Spaghetti, 3.4, Groceries
+
 Potato, 5.5, Vegetables
 
 Примечания:
 Не забывайте при записи в файл добавлять спец. символ перехода на следующую строку в конце - '\n'.
+
 При проверке на существование товара в методе add можно вызывать метод get_products для получения текущих продуктов.
+
 Не забывайте закрывать файл вызывая метод close() у объектов файла.
